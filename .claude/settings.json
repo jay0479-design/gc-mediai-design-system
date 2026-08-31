@@ -10,7 +10,8 @@
       "Bash(git add:*)",
       "Bash(npm run lint)",
       "Bash(npm run build)",
-      "Bash(npm test:*)"
+      "Bash(npm test:*)",
+      "mcp__aa698120-d8e1-4c8b-9d05-8996031c5d32__use_figma"
     ],
     "deny": [
       "mcp__figma__create_new_file",
