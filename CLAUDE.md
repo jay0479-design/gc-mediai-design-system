@@ -78,6 +78,7 @@
 - 레이어 이름, Auto Layout 속성, 간격(Gap/Padding), 텍스트 스타일 토큰을 정확히 추출하여 코드로 치환한다.
 - Figma의 Auto Layout 값은 코드의 Flexbox/Grid 속성으로 **정확히 변환**한다.
 - **임의의 스타일링을 창조하지 않는다.** 모든 스타일은 Component 기준점(`2031-6499`)과 정확히 일치해야 한다.
+- **텍스트 스타일·변수 우선 적용**: 텍스트는 Figma 텍스트 스타일(`GC/…` = PC, `GC_MO/…` = 모바일, 총 66종 — `docs/03_디자인_토큰.md` 표 참조)을 그대로 적용하고, 색상·radius는 Figma 변수 컬렉션(Color 22종·Radius 13종) 값으로 바인딩한다. **임의의 크기·행간·자간·색상 조합을 새로 만들지 않는다.** 스타일·변수 목록에 없는 값이 시안에 나타나면 `컴포넌트 업데이트 필요` 라벨을 남긴다.
 - MCP가 반환하는 Figma 에셋 URL은 **약 7일 후 만료**된다. 프로덕션 커밋 전 반드시 정적 프로젝트 에셋으로 교체한다.
 - **Figma는 읽기 전용(SSOT)이다.** 이 키트의 작업에서 Figma MCP는 읽기 도구(get_design_context, get_screenshot, get_metadata 등)만 사용한다. `use_figma`·`generate_figma_design`·`create_new_file` 등 **Figma에 쓰는 도구는 어떤 경우에도 호출하지 않는다.** 디자인·컴포넌트 수정은 디자이너가 Figma에서 직접 수행한다.
 
