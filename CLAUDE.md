@@ -82,6 +82,7 @@
 | 구분 | node-id | 역할 |
 |---|---|---|
 | **Component 기준점** | `2031-6499` | 타이포그래피·컬러 토큰·공통 버튼·인풋·아이콘·칩 등 제반 컴포넌트 규격의 유일한 기준 |
+| **Extended Components** | `2035-6510` | 확장 컴포넌트 섹션 — Table·Pagination·Sub Navigation Tabs·Year Selector·Footer(Container Default/Sub)·Hero Section Label·Download Banner·Chart Card·Era Tabs. **시안 조립 전 이 섹션까지 반드시 확인**하고, 존재하는 컴포넌트는 직접 제작 없이 인스턴스로 연결한다 |
 | **모바일(MO) 세부 페이지** | `470-120` | 모바일 오토 레이아웃, Gap, Padding/Margin, 컴포넌트 배치 순서 |
 | **PC 세부 페이지** | `1374-2669` | 데스크톱 그리드 시스템, 컬럼 구조, 섹션 배치 및 반응형 전환 포인트 |
 
