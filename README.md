@@ -1,6 +1,7 @@
 # GC메디아이 디자인 시스템 — Claude Code 전용 워크플로우 템플릿
 
-Figma MCP 기반 디자인-투-코드 자동화를 위한 팀 공용 Git 저장소 템플릿입니다.
+Figma MCP 기반 **디자인 자동화**(시안 생성·유지보수)를 위한 팀 공용 Git 저장소 템플릿입니다.
+기본 산출물은 **Figma 시안 프레임**이며, 코드(퍼블리싱)는 명시 요청 시에만 진행합니다.
 이 저장소를 클론(또는 프로젝트 루트에 복사)하는 것만으로
 누구나 동일한 품질 기준의 Claude Code 작업 환경을 갖게 됩니다.
 
@@ -11,8 +12,8 @@ Figma MCP 기반 디자인-투-코드 자동화를 위한 팀 공용 Git 저장�
 ├── .claude/
 │   ├── settings.json              # 팀 공유 권한 설정
 │   └── commands/
-│       ├── new-page.md            # /new-page [Figma 링크] — 신규 페이지 구축
-│       └── maintain.md            # /maintain [Figma 링크] — 기존 페이지 유지보수
+│       ├── new-page.md            # /new-page [Figma 링크] — 신규 페이지 시안 생성(Figma)
+│       └── maintain.md            # /maintain [Figma 링크] — 기존 시안 유지보수(Figma)
 ├── docs/                          # Claude가 작업 전 필독하는 컨벤션 문서
 │   ├── 01_핵심_개발_원칙.md
 │   ├── 02_Figma_MCP_분석_지침.md

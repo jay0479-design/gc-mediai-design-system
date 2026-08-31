@@ -1,0 +1,89 @@
+/* ============================================================
+   GC메디아이 디자인 토큰 — Figma SSOT 1:1 매핑
+   출처: Figma 6eO6s3lH8TVv85FWgBekEh · Component 기준점 2031-6499
+   docs/03_디자인_토큰.md (2026.08.31 동기화) 기준, MCP get_variable_defs 재검증
+   ============================================================ */
+
+:root {
+  /* ---- Color — Figma `Color` 변수 컬렉션 (22종) ---- */
+  --color-primary-pm1: #e4002b;        /* Primary/Pm1 */
+  --color-primary-pm1-hover: #c40025;  /* Primary/Pm1_Hover */
+  --color-primary-pm2: #4580eb;        /* Primary/Pm2 */
+  --color-gray-t1: #0d0a11;            /* Gray/T1 */
+  --color-gray-t2: #404656;            /* Gray/T2 */
+  --color-gray-t3: #979ca3;            /* Gray/T3 */
+  --color-gray-t4: #bbbbbb;            /* Gray/T4 */
+  --color-gray-t5: #e3e3e4;            /* Gray/T5 */
+  --color-bg1: #ffffff;                /* Background/Bg1 */
+  --color-bg2: #f7f9fa;                /* Background/Bg2 */
+  --color-bg3: #f7f7fb;                /* Background/Bg3 */
+  --color-bg4: #f3f3f5;                /* Background/Bg4 */
+  --color-bg5: #eff2f6;                /* Background/Bg5 */
+  --color-bg6: rgba(33, 43, 58, 0.6);  /* Background/Bg6 */
+  --color-bg7: rgba(10, 22, 40, 0.7);  /* Background/Bg7 */
+  --color-bg8: #170b0b;                /* Background/Bg8 */
+  --color-line-l1: #ced4da;            /* Line/L1 */
+  --color-line-l2: #e8e8ec;            /* Line/L2 */
+  --color-supporting-red1: #fdefec;    /* Supporting/Red1 */
+  --color-supporting-red2: #fc456a;    /* Supporting/Red2 */
+  --color-supporting-blue1: #edf4ff;   /* Supporting/Blue1 */
+  --color-supporting-blue2: #004de7;   /* Supporting/Blue2 */
+
+  /* ---- Radius — Figma `Radius` 변수 컬렉션 ---- */
+  --radius-1: 0.0625rem;
+  --radius-4: 0.25rem;
+  --radius-5: 0.3125rem;
+  --radius-6: 0.375rem;
+  --radius-7: 0.4375rem;
+  --radius-small: 0.5rem;      /* radius/small (8) */
+  --radius-10: 0.625rem;
+  --radius-medium: 0.75rem;    /* radius/medium (12) */
+  --radius-20: 1.25rem;
+  --radius-28: 1.75rem;
+  --radius-37: 2.3125rem;
+  --radius-99: 6.1875rem;      /* radius/99 — pill */
+  --radius-100: 6.25rem;       /* radius/100 — 원형 버튼 */
+
+  /* ---- Font Family ---- */
+  --font-family-base: 'Pretendard', 'Pretendard Variable', -apple-system, sans-serif;
+  --font-family-point: 'Special Gothic Expanded', 'Special Gothic Expanded One', sans-serif;
+
+  /* ---- 텍스트 스타일 — Figma 텍스트 스타일 1:1 (본 페이지 사용분) ----
+     font: <weight> <size>/<line-height> <family> · 자간은 --ls-* 별도 */
+
+  /* PC `GC/…` */
+  --font-gc-point-section-label: 700 1.75rem/2.625rem var(--font-family-point);   /* GC/Point/Section Label 28/42 */
+  --ls-gc-point-section-label: 0;
+  --font-gc-heading-title-40: 700 2.5rem/3.25rem var(--font-family-base);         /* GC/Heading/Title 40/52 */
+  --ls-gc-heading-title-40: -0.125rem;
+  --font-gc-body-small-18: 400 1.125rem/1.6875rem var(--font-family-base);        /* GC/Body/Small 18/27 */
+  --ls-gc-body-small-18: -0.02em;
+  --font-gc-body-small-16: 400 1rem/1.5rem var(--font-family-base);               /* GC/Body/Small 16/24 */
+  --ls-gc-body-small-16: -0.0625rem;
+  --font-gc-ir-grid-18-b: 700 1.125rem/1.6875rem var(--font-family-base);         /* GC/IR/Grid 18 B */
+  --ls-gc-ir-grid-18-b: 0;
+  --font-gc-ir-grid-16-b: 700 1rem/1.5rem var(--font-family-base);                /* GC/IR/Grid 16 B */
+  --ls-gc-ir-grid-16-b: 0;
+  --font-gc-ir-grid-14-m: 500 0.875rem/1.3125rem var(--font-family-base);         /* GC/IR/Grid 14 M */
+  --ls-gc-ir-grid-14-m: -0.01em;
+  --font-gc-nav-active-onbrand: 700 1.25rem/1.875rem var(--font-family-base);     /* GC/Nav/Active-OnBrand 20/30 */
+  --ls-gc-nav-active-onbrand: -0.0625rem;
+  --font-gc-nav-inactive-onbrand: 500 1.25rem/1.875rem var(--font-family-base);   /* GC/Nav/Inactive-OnBrand 20/30 */
+  --ls-gc-nav-inactive-onbrand: -0.0625rem;
+  --font-gc-button-default: 700 1.0625rem/1.625rem var(--font-family-base);       /* GC/Button/Default 17/26 */
+  --ls-gc-button-default: -0.02em;
+
+  /* 모바일 `GC_MO/…` — 자간 일괄 -1% */
+  --font-gc-mo-point-b-16: 700 1rem/1.5rem var(--font-family-point);              /* GC_MO/Point/B 16 */
+  --font-gc-mo-heading-b-26: 700 1.625rem/2.4375rem var(--font-family-base);      /* GC_MO/Heading/B 26 */
+  --font-gc-mo-heading-b-16: 700 1rem/1.5rem var(--font-family-base);             /* GC_MO/Heading/B 16 */
+  --font-gc-mo-body-r-16: 400 1rem/1.5rem var(--font-family-base);                /* GC_MO/Body/R 16 */
+  --font-gc-mo-body-r-14: 400 0.875rem/1.3125rem var(--font-family-base);         /* GC_MO/Body/R 14 */
+  --font-gc-mo-body-m-12: 500 0.75rem/1.125rem var(--font-family-base);           /* GC_MO/Body/M 12 */
+  --font-gc-mo-body-r-12: 400 0.75rem/1.125rem var(--font-family-base);           /* GC_MO/Body/R 12 */
+  --ls-gc-mo: -0.01em;
+
+  /* ---- 반응형 ----
+     브레이크포인트 64rem — 미디어 쿼리는 @media (min-width: 64rem) 사용
+     (커스텀 프로퍼티는 미디어 쿼리 조건에 쓸 수 없어 값만 기록) */
+}

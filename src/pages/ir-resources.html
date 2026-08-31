@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IR 자료 — GC메디아이</title>
+  <!-- 서체: Pretendard(본문) · Special Gothic Expanded(포인트 라벨) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" />
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/ir-resources.css" />
+</head>
+<body>
+
+  <!-- GNB — Figma: MO GNB=PRIMARY(2031-6499) / PC GNB-Default(1374-2670) -->
+  <header class="gnb">
+    <a href="#" class="gnb__logo" aria-label="GC메디아이 홈">
+      <span class="gnb__logo-part gnb__logo-part--left">
+        <img src="../assets/logo-pc-wordmark.svg" alt="" />
+      </span>
+      <span class="gnb__logo-part gnb__logo-part--right">
+        <img src="../assets/logo-pc-symbol.svg" alt="" />
+      </span>
+    </a>
+
+    <nav class="gnb__nav" aria-label="주 메뉴">
+      <a href="#" class="gnb__nav-item">회사 소개</a>
+      <a href="#" class="gnb__nav-item">사업 분야</a>
+      <a href="#" class="gnb__nav-item gnb__nav-item--active" aria-current="page">IR</a>
+    </nav>
+
+    <a href="#" class="gnb__cta">문의하기</a>
+
+    <button type="button" class="gnb__menu" aria-label="메뉴 열기">
+      <span class="gnb__menu-bar"></span>
+      <span class="gnb__menu-bar"></span>
+      <span class="gnb__menu-bar"></span>
+    </button>
+  </header>
+
+  <!-- SubNav(2depth) — Figma 539-11104 · MO 전용 -->
+  <nav class="sub-nav" aria-label="현재 위치">
+    <span class="sub-nav__crumb">IR</span>
+    <img class="sub-nav__chevron" src="../assets/icon-chevron-right.svg" alt="" />
+    <span class="sub-nav__crumb sub-nav__crumb--current">IR 자료</span>
+  </nav>
+
+  <main>
+    <!-- 페이지 헤드 — Section Label 패턴(1374-2673) -->
+    <!-- 컴포넌트 업데이트 필요: IR 자료 페이지 타이틀 — 기획안(와이어프레임)에 타이포 미지정, GC/Heading/Title 40 · GC_MO/Heading/B 26 매핑 가정 -->
+    <section class="ir-head" aria-labelledby="ir-title">
+      <p class="ir-head__label">INVESTOR RELATIONS</p>
+      <h1 id="ir-title" class="ir-head__title">IR 자료</h1>
+      <p class="ir-head__desc">GC메디아이의 주요 IR 자료를 확인하세요.</p>
+    </section>
+
+    <section class="ir-list-section" aria-label="IR 자료 목록">
+      <!-- 컴포넌트 업데이트 필요: IR 목록 행(썸네일+날짜+제목+List BTN) — 사내 라이브러리 미존재(News Card만 등록), 썸네일 규격(PC 160×90 / MO 100×56) 미정의 -->
+      <ul class="ir-list">
+        <li class="ir-list__item">
+          <a href="#" class="ir-list__link">
+            <span class="ir-list__thumb" role="img" aria-label="자료 썸네일"></span>
+            <span class="ir-list__body">
+              <span class="ir-list__date">XXXX.XX.XX</span>
+              <span class="ir-list__title">KB증권 GC메디아이 기업분석 리포트</span>
+            </span>
+            <span class="list-btn" aria-hidden="true">
+              <img class="list-btn__icon" src="../assets/icon-arrow-right-20.svg" alt="" />
+            </span>
+          </a>
+        </li>
+        <li class="ir-list__item">
+          <a href="#" class="ir-list__link">
+            <span class="ir-list__thumb" role="img" aria-label="자료 썸네일"></span>
+            <span class="ir-list__body">
+              <span class="ir-list__date">XXXX.XX.XX</span>
+              <span class="ir-list__title">GC메디아이 애널리스트 간담회</span>
+            </span>
+            <span class="list-btn" aria-hidden="true">
+              <img class="list-btn__icon" src="../assets/icon-arrow-right-20.svg" alt="" />
+            </span>
+          </a>
+        </li>
+        <li class="ir-list__item">
+          <a href="#" class="ir-list__link">
+            <span class="ir-list__thumb" role="img" aria-label="자료 썸네일"></span>
+            <span class="ir-list__body">
+              <span class="ir-list__date">XXXX.XX.XX</span>
+              <span class="ir-list__title">김진태 대표 3PRO TV 출연 | ‘Medical OS’ 성장전략</span>
+            </span>
+            <span class="list-btn" aria-hidden="true">
+              <img class="list-btn__icon" src="../assets/icon-arrow-right-20.svg" alt="" />
+            </span>
+          </a>
+        </li>
+        <!-- 기획안 4·5행: 콘텐츠 미지정 플레이스홀더 행 (와이어프레임 동일 구성) -->
+        <li class="ir-list__item">
+          <a href="#" class="ir-list__link">
+            <span class="ir-list__thumb" role="img" aria-label="자료 썸네일"></span>
+            <span class="ir-list__body"></span>
+            <span class="list-btn" aria-hidden="true">
+              <img class="list-btn__icon" src="../assets/icon-arrow-right-20.svg" alt="" />
+            </span>
+          </a>
+        </li>
+        <li class="ir-list__item">
+          <a href="#" class="ir-list__link">
+            <span class="ir-list__thumb" role="img" aria-label="자료 썸네일"></span>
+            <span class="ir-list__body"></span>
+            <span class="list-btn" aria-hidden="true">
+              <img class="list-btn__icon" src="../assets/icon-arrow-right-20.svg" alt="" />
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- 컴포넌트 업데이트 필요: 페이지네이션 — 사내 라이브러리 미존재, 토큰 조합으로 구성 -->
+      <nav class="pagination" aria-label="페이지 이동">
+        <button type="button" class="pagination__arrow pagination__arrow--prev" aria-label="이전 페이지">
+          <img src="../assets/icon-chevron-right.svg" alt="" />
+        </button>
+        <a href="#" class="pagination__page pagination__page--current" aria-current="page">1</a>
+        <a href="#" class="pagination__page">2</a>
+        <a href="#" class="pagination__page">3</a>
+        <a href="#" class="pagination__page">4</a>
+        <a href="#" class="pagination__page">5</a>
+        <button type="button" class="pagination__arrow" aria-label="다음 페이지">
+          <img src="../assets/icon-chevron-right.svg" alt="" />
+        </button>
+      </nav>
+    </section>
+  </main>
+
+  <!-- 컴포넌트 업데이트 필요: Footer — 사내 라이브러리·Figma 기준점 미존재, 기획안 네이비 컬러 토큰 미등록으로 Background/Bg8 대체 -->
+  <footer class="footer">
+    <p class="footer__text">Footer</p>
+  </footer>
+
+</body>
+</html>

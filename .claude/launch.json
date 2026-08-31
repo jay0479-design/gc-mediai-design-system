@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-hyunyoung-Desktop-gc-mediai-design-system/d77dcc26-21da-4dfc-bea2-f686598880d3/scratchpad/preview-server.mjs"],
+      "port": 4173
+    }
+  ]
+}
