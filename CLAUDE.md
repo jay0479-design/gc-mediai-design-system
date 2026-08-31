@@ -74,6 +74,7 @@
 - Figma의 Auto Layout 값은 코드의 Flexbox/Grid 속성으로 **정확히 변환**한다.
 - **임의의 스타일링을 창조하지 않는다.** 모든 스타일은 Component 기준점(`2031-6499`)과 정확히 일치해야 한다.
 - MCP가 반환하는 Figma 에셋 URL은 **약 7일 후 만료**된다. 프로덕션 커밋 전 반드시 정적 프로젝트 에셋으로 교체한다.
+- **Figma는 읽기 전용(SSOT)이다.** 이 키트의 작업에서 Figma MCP는 읽기 도구(get_design_context, get_screenshot, get_metadata 등)만 사용한다. `use_figma`·`generate_figma_design`·`create_new_file` 등 **Figma에 쓰는 도구는 어떤 경우에도 호출하지 않는다.** 디자인·컴포넌트 수정은 디자이너가 Figma에서 직접 수행한다.
 
 ### 5.3 컴포넌트 1:1 맵핑
 - Figma 컴포넌트 이름과 코드 컴포넌트가 정확히 1:1로 일치해야 한다.
@@ -128,3 +129,4 @@
 - ❌ Figma·문서에서 확인되지 않은 값의 추측·창작
 - ❌ Self-Confirm 리포트 없이 코드 출력
 - ❌ 만료성 Figma 에셋 URL을 정적 에셋으로 교체하지 않은 채 프로덕션 커밋
+- ❌ **Figma 파일 수정** — Figma MCP 쓰기 도구(use_figma 등) 호출 금지. 이 키트에서 Figma는 항상 읽기 전용이다
